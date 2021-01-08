@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,11 +12,14 @@
   <link rel="stylesheet" href="./assets/css/bootstrap-sketchy.css">
   <!-- font-awesome مكتبة -->
   <!-- قم باستيراد مكتبة font-awesome هنا أو أي مكتبة متاحة لأيقونات التحميل -->
+  <script src="https://kit.fontawesome.com/5cff7069f0.js" crossorigin="anonymous"></script>
+
   <title>Cookie Factory</title>
 </head>
 
-<!-- <body onload="myFunction()"> -->
-<!-- <div id="page" style="display:none;"> -->
+ <body onload="myFunction()">
+ <div id="page" style="display:none;">
+
 <div id="sidebar">
   <img src="assets/img/cookies.png" class="logo" alt="website logo" />
   <h3>Cookie<br>Factory</h3>
@@ -78,24 +81,31 @@
     </div>
   </div>
 </div>
-</div>
 
 <ul id="showcart" ></ul>
 
-
 <h1>Total</h1>
+
 <h3 id='total'>0 KD</h3>
+
 <a class="menu-item checkout" href="./checkout.html">Checkout Page</a>
+
+</div>
+
+
 
 
 
 <!-- بونص 👑 -->
 <div id="loader">
-  <!-- قم بإضافة أيقونة التحميل هنا -->
+  
+  <i class="fas fa-spinner"></i>
+  
 </div>
+
 <script>
     // كود اختبار أيقونة التحميل
-  /*
+  
   let myVar;
   function myFunction() {
     myVar = setTimeout(showPage, 3000);
@@ -104,7 +114,7 @@
     document.getElementById("loader").style.display = "none";
     document.getElementById("page").style.display = "block";
   }
-  */
+  
 </script>
 
 <script src="./indexx.js"></script>
