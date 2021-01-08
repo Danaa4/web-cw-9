@@ -24,16 +24,17 @@
     <h4 class="menu-item">
       <a href="./index.html">Cookies</a>
       <br></br>
-      <a href="">Add a Cookie</a>
+      <a href="./nextpag.html">Add a Cookie</a>
       <br></br>
-      <a href="">See my Cart</a>
+      <a href="./cart.html">See my Cart</a>
+      
     </h4>
   </section>
 </div>
 <h2>Cookies</h2>
 <div id="cookies-box">
   <div class="col-lg-4 col-md-3 col-12">
-    <div class="card">
+    <div  class="card">
       <div class="image">
         <img class="card-img-top img-fluid" src="./assets/img/cream-brulee-cookie.png" alt="" />
       </div>
@@ -41,12 +42,14 @@
         <h5 class="card-title">
           <span>Creme Brulee Cookie</span>
         </h5>
-        <button type="button" class="btn btn-primary">Add to Cart</button>
+        <input value="0" type="number" id="0"/>
+        <button  onclick="addToCart(0)" type="button" class="btn btn-primary">Add to Cart</button>
       </div>
     </div>
   </div>
+
   <div class="col-lg-4 col-md-3 col-12">
-    <div class="card">
+    <div  class="card">
       <div class="image">
         <img class="card-img-top img-fluid" src="./assets/img/white-choco-oreao-cookie.png" alt="" />
       </div>
@@ -54,25 +57,38 @@
         <h5 class="card-title">
           <span>White Choco Orea Cookie</span>
         </h5>
-        <button type="button" class="btn btn-primary">Add to Cart</button>
+        <input value="0" type="number" id="1"/>
+        <button onclick="addToCart(1)" type="button" class="btn btn-primary">Add to Cart</button>
       </div>
     </div>
   </div>
+
   <div class="col-lg-4 col-md-3 col-12">
-    <div class="card">
+    <div  class="card">
       <div class="image">
         <img class="card-img-top img-fluid" src="./assets/img/dates-cookie.png" alt="" />
       </div>
-      <div class="card-body">
+      <div  class="card-body">
         <h5 class="card-title">
           <span>Mixed Dates Cookie</span>
         </h5>
-        <button type="button" class="btn btn-primary">Add to Cart</button>
+        <input value="0" type="number" id="2"/>
+        <button onclick="addToCart(2)" type="button" class="btn btn-primary">Add to Cart</button>
       </div>
     </div>
   </div>
 </div>
 </div>
+
+<ul id="showcart" ></ul>
+
+
+<h1>Total</h1>
+<h3 id='total'>0 KD</h3>
+<a class="menu-item checkout" href="./checkout.html">Checkout Page</a>
+
+
+
 <!-- بونص 👑 -->
 <div id="loader">
   <!-- قم بإضافة أيقونة التحميل هنا -->
@@ -90,6 +106,9 @@
   }
   */
 </script>
+
+<script src="./indexx.js"></script>
+
 </body>
 
 </html>

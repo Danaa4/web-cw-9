@@ -95,3 +95,8 @@ td button.btn {
   margin: -76px 0 0 -76px;
   animation: spin 2s linear infinite;
 }
+
+.checkout{
+  font-size: 34px ;
+  color:#84563c;
+}
